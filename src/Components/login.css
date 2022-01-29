@@ -1,0 +1,36 @@
+.login_container{
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.login_field{
+    box-shadow:  2px 2px 10px  lightgray;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.login_field> input{
+    height: 2rem;
+    width:  18rem;
+    padding: 3px;
+    margin: 5px;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.login_btn{
+    background-color: blue;
+    color: white;
+    width:  18.5rem !important;
+    border: none;
+    font-weight: bold;
+}
+.login_btn:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+a:hover{
+    cursor: pointer;
+}

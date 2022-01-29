@@ -1,0 +1,17 @@
+.payment_container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.pay_btn{
+    height: 3rem;
+    width: 5rem;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: greenyellow;
+    padding: 5px;
+}
