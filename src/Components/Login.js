@@ -21,7 +21,7 @@ const Login = () => {
     setUserInfo(user)
   };
   const actionCodeSettings = {
-    url: 'http://localhost:3000',
+    url: 'https://login-payment-2004f.web.app',
     handleCodeInApp: true,
   };
   const auth = getAuth();

@@ -1,11 +1,10 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
 import Login from "./Components/Login";
 import Payment from "./Components/Payment";
 import PrivateRoute from "./Components/PrivateRoute";

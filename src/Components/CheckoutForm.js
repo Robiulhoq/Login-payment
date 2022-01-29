@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import { useHistory } from 'react-router-dom';
 import './Payment.css'
-import successGif from '../image/success.gif';
+
 
 
 
@@ -15,7 +15,7 @@ const CheckoutForm = ({ price }) => {
     console.log(success);
     const [clientSerict, setClientSerict] = useState('')
     useEffect(() => {
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://nameless-everglades-93524.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -38,8 +38,6 @@ const CheckoutForm = ({ price }) => {
         if (card == null) {
             return;
         }
-
-
         const { error, paymentMethod } = await stripe.createPaymentMethod({
             type: 'card',
             card,
